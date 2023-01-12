@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ Computes minimum operations needed in a text editor that 
 results in exactly n H characters in the file, where n is a number and H
  is a single character"""
