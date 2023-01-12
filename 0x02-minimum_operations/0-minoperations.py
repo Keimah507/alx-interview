@@ -10,7 +10,6 @@ def minOperations(n):
 
     Args:
         n: input value
-        factor_list: List to save the operations
     Return: the sum of the operations
     """
     if n < 2:
