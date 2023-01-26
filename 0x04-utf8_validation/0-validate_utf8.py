@@ -19,7 +19,7 @@ def validUTF8(data):
                 mask = mask >> 1
 
             if n_bytes == 0:
-                 continue
+                continue
 
             if n_bytes == 1 or n_bytes > 4:
                 return False
