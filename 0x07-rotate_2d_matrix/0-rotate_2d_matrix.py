@@ -1,28 +1,29 @@
 #!/usr/bin/python3
 """Rotates an n x n 2D matrix clockwise"""
 
+
 def rotate_2d_matrix(matrix):
     """Rotate the matrix"""
-    l, r = 0, len(matrix) - 1
-    
-    while l < r:
-        for i in range(r - l):
-            top, bottom = l, r
+    left, right = 0, len(matrix) - 1
 
-            #save the top left
-            topLeft = matrix[top][l + i]
+    while left < right:
+        for i in range(right - left):
+            top, bottom = left, right
 
-            #move bottom left to top left
-            matrix[top][l + i] = matrix[bottom - i][l]
+            # save the top left
+            topLeft = matrix[top][left + i]
 
-            #move bottom right to bottom left
-            matrix[bottom - i][l] = matrix[bottom][r - i]
+            # move bottom left to top left
+            matrix[top][left + i] = matrix[bottom - i][l]
 
-            #move top right into bottom right
-            matrix[bottom][r - i] = matrix[top + i][r]
+            # move bottom right to bottom left
+            matrix[bottom - i][l] = matrix[bottom][right - i]
 
-            #move top left into top right
-            matrix[top + i][r] = topLeft
+            # move top right into bottom right
+            matrix[bottom][right - i] = matrix[top + i][right]
 
-        r -= 1
-        l += 1
+            # move top left into top right
+            matrix[top + i][right] = topLeft
+
+        right -= 1
+        left += 1
