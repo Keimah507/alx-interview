@@ -11,8 +11,8 @@ grid is rectangular, with its width and height not exceeding 100
 The grid is completely surrounded by water
 There is only one island (or nothing).
 The island doesn’t have “lakes” (water inside that isn’t connected to the water surrounding the island).
+```
 guillaume@ubuntu:~/0x09$ cat 0-main.py
-'''
 #!/usr/bin/python3
 """
 0-main
@@ -33,4 +33,4 @@ guillaume@ubuntu:~/0x09$
 guillaume@ubuntu:~/0x09$ ./0-main.py
 12
 guillaume@ubuntu:~/0x09$ 
-'''
+```
